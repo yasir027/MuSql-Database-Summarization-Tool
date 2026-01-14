@@ -43,20 +43,20 @@ Handles Unicode output (UTF-8) for relations and special characters.
 Installation
 
 Clone this repository:
-
+```
 git clone <repo_url>
 cd <repo_folder>
 
-
+```
 Create a Python virtual environment (optional but recommended):
-
+```
 python -m venv venv
 venv\Scripts\activate   # Windows
 # or
 source venv/bin/activate # macOS/Linux
-
+```
 
 Install dependencies:
-
+```
 pip install pymysql
-
+```
