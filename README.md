@@ -60,3 +60,30 @@ Install dependencies:
 ```
 pip install pymysql
 ```
+
+Usage
+
+Open tablepython.py.
+
+Update the DB_CONFIG dictionary with your database credentials:
+
+DB_CONFIG = {
+    "host": "localhost",
+    "user": "root",
+    "password": "your_password",
+    "database": "your_database",
+    "port": 3306
+}
+
+
+Run the script:
+```
+python tablepython.py
+```
+
+Outputs:
+```
+db_structure.json → structured JSON of tables, columns, and foreign keys.
+
+db_summary.txt → paragraph-style summary of tables and their relationships.
+```
