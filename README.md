@@ -6,29 +6,20 @@ This project was designed for MySQL databases and can help developers, analysts,
 
 Features
 
-Connects to a MySQL database using credentials you provide.
+- Connects to a MySQL database using credentials you provide.
 
-Fetches all tables in the database.
+- Fetches all tables in the database.
 
-Extracts columns with metadata:
-
-Field name
-
-Data type
-
-Nullable
-
-Key
-
-Default value
-
-Extra info
-
-Comments
-
-Extracts foreign key relationships between tables.
-
-Generates stored procedure information (optional enhancement).
+- Extracts columns with metadata:
+  Field name
+  Data type
+  Nullable
+  Key
+  Default value
+  Extra info
+  Comments
+  Extracts foreign key relationships between tables.
+  Generates stored procedure information (optional enhancement).
 
 Creates:
 
@@ -109,3 +100,24 @@ db_structure.json excerpt:
   }
 }
 ```
+Contributing
+
+Fork the repository.
+
+Create a new branch: git checkout -b feature/my-feature
+
+Make your changes.
+
+Submit a pull request.
+
+License
+
+MIT License. Free to use, modify, and distribute.
+
+Notes
+
+Tested on MySQL 8.x.
+
+Works with local or remote MySQL instances.
+
+Unicode-safe outputs for special characters in foreign key relations.
