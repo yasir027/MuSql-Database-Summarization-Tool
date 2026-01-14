@@ -82,8 +82,30 @@ python tablepython.py
 ```
 
 Outputs:
-```
+
 db_structure.json → structured JSON of tables, columns, and foreign keys.
 
 db_summary.txt → paragraph-style summary of tables and their relationships.
+
+Example Output
+```
+db_summary.txt excerpt:
+
+Table 'judgment' contains the fields: judgmentId, judgmentCitation, judgmentNo, judgmentYear, judgmentNoText, judgmentDOJ, judgmentType, judgmentPetitioner, judgmentRespondent, judgmentParties, courtId, judgmentCourtText, judgmentPetitionerCouncil, judgmentRespondentCouncil, judgmentOtherCounsel, operatorId, judgmentEntryDate, judgmentJudges, judgmentDocFile, judgmentJudicialObservation.
+Relations: courtId → court.courtId
+```
+```
+db_structure.json excerpt:
+
+{
+  "judgment": {
+    "columns": [
+      {"field": "judgmentId", "type": "int", "nullable": "NO", "key": "PRI", "default": null, "extra": "auto_increment", "comment": ""},
+      ...
+    ],
+    "foreign_keys": [
+      {"column": "courtId", "references": "court.courtId"}
+    ]
+  }
+}
 ```
